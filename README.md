@@ -1,4 +1,4 @@
-Notes:
+# Notes:
 
 * My solution has referenced these projects I found in Github:
 
@@ -10,33 +10,33 @@ Notes:
 
 * I had deployed this project to Heroku Server. You can run the demo directly from this link:
 
-Tech Stack
+##Tech Stack
 -------------
 Front End: AngularJS2,TypeScript,html,css
 Back End: PostgresSQL, nodejs, express, karma, npm, 
 
 * Since I use the free remote database hosted in Heroku, you may need an Heroku account to run the project in local machine.
 
-Login to heroku
+##Login to heroku
 ---------------
 heroku login
 
-Setup for local
+##Setup for local
 ---------------
 npm install   -- including rebuild angularjs2
 heroku local web
 
-Local test
+##Local test
 ---------------
 npm test
 
-Deploy to Production
+##Deploy to Production
 ---------------------
 git add .
 git commit -am "next point"
 git push heroku master
 
-Run the Demo
+##Run the Demo
 ------------------------------
 https://kw-mean.herokuapp.com/
 
