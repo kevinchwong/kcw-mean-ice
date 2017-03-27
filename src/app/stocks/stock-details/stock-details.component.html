@@ -1,0 +1,21 @@
+<div *ngIf="stock" class="row">
+  <div class="col-md-12">
+    <h4 *ngIf="stock.id">Change your stock detail</h4>
+    <h4 *ngIf="!stock.id">Enter new stock symbol and quantity</h4>
+  </div>
+</div>
+<div *ngIf="stock" class="row">
+  <form class="col-md-12">
+    <div class="form-group">
+      <label for="stock-symbol">Symbol</label>
+      <input class="form-control" name="stock-symbol" [(ngModel)]="stock.symbol" placeholder="Symbol"/>
+    </div>
+    <div class="form-group">
+      <label for="stock-quantity">Number of shares owned</label>
+      <input class="form-control" name="stock-quantity" [(ngModel)]="stock.quantity" placeholder="Share Amount"/>
+    </div>
+    <button class="btn btn-primary" *ngIf="!stock.id" (click)="createStock(stock)">Create</button>
+    <button class="btn btn-info" *ngIf="stock.id" (click)="updateStock(stock)">Save Change to Database</button>
+    <button class="btn btn-danger" *ngIf="stock.id" (click)="deleteStock(stock.id)">Delete</button>
+  </form>
+</div>

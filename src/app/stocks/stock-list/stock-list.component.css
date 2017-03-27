@@ -1,0 +1,26 @@
+.sp-table th{
+	padding-left: 25px;
+	width:210px;
+}
+
+.sp-table td{
+	padding-left: 10px;
+	width:210px;
+}
+
+button.sp-table {
+	margin-top: 10px;
+}
+
+.sp-price{
+	color:rgb(0,200,0);
+}
+
+.sp-price.red{
+	color:red;
+}
+
+.sp-editor {
+	margin-top: 30px;
+}
+

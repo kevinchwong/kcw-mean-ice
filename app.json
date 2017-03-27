@@ -1,0 +1,8 @@
+{
+  "name": "Stocks Angular2",
+  "description": "Stocks Portfolio",
+  "repository": "",
+  "logo": "https://mlab.com/company/brand/resources/mLab-logo-onlight.png",
+  "keywords": ["node", "express", "angular", "angular2", "MEAN", "mongodb", "REST", "API"],
+  "addons": ["mongolab"]
+}

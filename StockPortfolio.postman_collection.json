@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "StockPortfolio",
+		"_postman_id": "80e6d764-9104-409c-24d0-a8f63e84c7bd",
+		"description": "API CRUD TEST ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/stocks",
+			"request": {
+				"url": "{{host}}/api/stocks",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/stocks/1",
+			"request": {
+				"url": "{{host}}/api/stocks/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/stocks",
+			"request": {
+				"url": "{{host}}/api/stocks",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"symbol\": \"IBM\",\n    \"quantity\": \"123134341234567890\"\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/stocks/1",
+			"request": {
+				"url": "{{host}}/api/stocks/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n \t\"symbol\": \"BIDU\",\n    \"quantity\": \"13345330\"\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/stocks/1",
+			"request": {
+				"url": "{{host}}/api/stocks/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/stocks/BAD-SYMBOL",
+			"request": {
+				"url": "{{host}}/api/stocks/BAD-SYMBOL",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Negative Test : failed to get stock."
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,43 @@
+<div class="row">
+  
+  <div>
+    <h2>Stock Portfolio</h2>
+    <h5>by Kevin Wong</h5>
+  </div>
+
+
+  <table class="sp-table">
+    <thead>
+      <th>Symbol</th>
+      <th>Company Name</th>
+      <th>Last Trade Price</th>
+      <th>Number of shares owned</th>
+      <th>Market value of stake</th>
+    </thead>
+  </table>
+
+  <table class="sp-table">
+    <tr *ngFor="let stock of stocks" class="list-group-item" (click)="selectStock(stock)" [class.active]="stock === selectedStock">
+      <td>{{stock.symbol}}</td>
+      <td>{{stock.company}}</td>
+      <td class="sp-price" [class.red]="stock.price<stock.oldprice" >{{stock.price| currency:'USD':true:'1.2-2'}}</td>
+      <td>{{stock.quantity}}</td>
+      <td>{{stock.price*stock.quantity| currency:'USD':true:'1.2-2'}}</td>
+    </tr>
+  </table>
+
+  <button class="sp-table btn btn-warning" [disabled]="over5Buttons()" (click)="createNewStock()">New Stock (Up to 5)</button>
+
+  <div>
+    <h5>Click a row to select a particular stock to edit its detail.</h5>
+  </div>
+
+  <div class="sp-editor">
+    <stock-details
+      [stock]="selectedStock"
+      [createHandler]="addStock"
+      [updateHandler]="updateStock"
+      [deleteHandler]="deleteStock">
+    </stock-details>    
+  </div>
+</div>
