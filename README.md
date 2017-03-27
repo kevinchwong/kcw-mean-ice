@@ -8,13 +8,11 @@ Notes:
 
 * I had deployed this project to Heroku Server. You can run the demo directly from this link:
 
-* Tech Stack:
+Tech Stack
+-------------
 Front End: AngularJS2,TypeScript,html,css
 Back End: PostgresSQL, nodejs, express, karma, npm, 
 
-
-* Usage *
-==========
 * Since I use the free remote database hosted in Heroku, you may need an Heroku account to run the project in local machine.
 
 Login to heroku
