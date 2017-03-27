@@ -38,5 +38,5 @@ Deploy to Production
 
 ##Run the Demo
 ------------------------------
-https://kw-mean.herokuapp.com/
+https://kcw-mean.herokuapp.com/
 
