@@ -2,9 +2,11 @@ Notes:
 
 * My solution has referenced these projects I found in Github:
 
-  https://github.com/vyakymenko/angular2-seed-express
-  https://github.com/paulhoughton/portfolio
-  https://github.com/chrisckchang/mean-contactlist-angular2
+  - https://github.com/vyakymenko/angular2-seed-express
+  
+  - https://github.com/paulhoughton/portfolio
+
+  - https://github.com/chrisckchang/mean-contactlist-angular2
 
 * I had deployed this project to Heroku Server. You can run the demo directly from this link:
 
